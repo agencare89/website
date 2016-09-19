@@ -1,0 +1,288 @@
+* :not(i){
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.fixed {
+    position:fixed;
+}
+
+.solid-bg {
+    background-color: #1B1C1D !important;
+    color: white;
+    padding-left: 34vw !important;
+    height: 7vh !important;
+}
+
+.no-active {
+    border-color: transparent !important;
+}
+
+#main-screen {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/background_image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh !important;
+}
+
+#main-nav {
+    text-align: center !important;
+    border: none !important;
+    padding-left: 27vw;
+}
+
+h1 {
+    margin-left: 2em;
+    font-size: 3rem !important;
+}
+
+#main-text {
+    /*margin-top: 5%; */
+    margin-top: 10%;
+}
+
+a#goToPortfolio, a#goToPortfolio:hover {
+    color: inherit; 
+    text-decoration: none;
+}
+
+button.fluid.ui.secondary.basic.button:hover {
+    background: #1B1C1D !important;
+    color: white !important;
+}
+
+.button > a, .button > a:hover {
+    display: block !important;
+    color: inherit !important; 
+    text-decoration: none !important;
+}
+
+/***************************
+ * Typed Custom styling    *
+ ***************************/
+ #typed-cursor{
+  opacity: 0;
+}
+
+/***************************
+ * CSS Typing styling    *
+ ***************************/
+ .css-typing
+ {
+    text-align: center;
+    padding-left:20%;
+    width: 17em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 4.5s steps(40, end);
+    animation: type 4.5s steps(40, end);
+}
+
+@keyframes type{
+    from { width: 0; margin-left:8.5em; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; margin-left:8.5em; }
+}
+
+#cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+#main-subtext {
+    margin-bottom: 5%;
+}
+
+#main-image {
+    margin-top: 5% !important;
+}
+
+/* Skills Section */
+#top-skills-section {
+    margin-top: 3vh !important;
+    margin-bottom: 5vh !important;
+    height: 25vh !important;
+}
+
+.top-skills-img-middle {
+    width: 100% !important;
+    height: 110px !important;
+}
+
+.top-skills-img {
+    width: 100% !important;
+    height: 130px !important;
+    padding-bottom: 15px !important;
+}
+
+#top-skills-icons {
+    padding-top: 8px;
+}
+
+/* id=home-page-text-1 */
+#home-page-text-1 {
+    height: 40vh !important;
+    background-color: #1B1C1D;
+}
+
+#text-1-header {
+    padding-top: 2em !important;
+    color: #edeeef !important;
+    font-size: 28px !important;
+    text-align: center !important;
+}
+
+#projects-teaser {
+    height: auto !important;
+    margin-top: 3vh !important;
+    margin-bottom: 10vh !important;
+}
+
+#home-footer {
+    height: 7vh !important;
+    margin-top: 3vh !important;
+    padding-top: 1em !important;
+    background-color: #1B1C1D !important;
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
+
+.white-text {
+    color: #edeeef !important;
+}
+
+#home-footer-header {
+    padding-top: 1em !important;
+}
+
+#contact-form-section {
+    height: 80vh !important;
+    margin-top: 3vh !important;
+    background-color: #1B1C1D !important;
+}
+
+#recaptcha {
+    height: 60px !important;
+}
+
+.set-height {
+    height: 200px !important;
+}
+.large-height {
+    height: 325px !important;
+}
+
+/* Skills page */
+#skills-bg {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/skills_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#skills-main {
+    margin-top: 15vh !important;
+    margin-bottom: 10vh !important;
+    height: auto !important;
+}
+
+#skills-search {
+    text-align: center !important;
+    margin-top: 3vh !important;
+    margin-bottom: 5vh !important;
+}
+
+#skills-content {
+    height: auto !important;
+    margin-top: 3vh !important;
+    margin-bottom: 5vh !important;
+}
+
+/* Experience page */ 
+#experience-main {
+    margin-top: 15vh !important;
+    margin-bottom: 10vh !important;
+    height:auto !important;
+}
+
+/* About page */ 
+#about-main {
+    margin-top: 15vh !important;
+    height: 77.1vh !important;
+}
+
+#aboutMeImage {
+    padding-top: 50px;
+}
+
+/* Portfolio page */
+#portfolio-main {
+    margin-top: 15vh !important;
+    margin-bottom: 10vh !important;
+    height: auto !important;
+}
+
+.half-bottom-gutter {
+    padding-bottom: 0.5rem !important;
+}
+
+.half-top-gutter {
+    padding-top: 0.5rem !important;
+}
+
+.no-top-gutter {
+    padding-top: 0rem !important;
+}
+
+.no-bottom-gutter {
+    padding-bottom: 0rem !important;
+}
+
+.ui.top.attached.tabular.menu {
+    margin-left: 1vw !important;
+}
+.ui.bottom.attached.tab.segment.active {
+    border: none !important;
+}
+
+#experience-menu {
+    position: fixed !important;
+}
+
+.white-bg {
+    background-color: white !important;
+}
+
+.cursor_text {
+    display: inline;
+    position: absolute;
+    z-index: 1000;
+    width: 5px;
+    border-left: 5px solid #ebeae4;
+    -webkit-animation: 0.8s blink step-end infinite;
+}
+
+.right.aligned.column > i {
+    cursor: pointer;
+}
+
+.ui.basic.green.button:hover, .ui.button.green.button:hover {
+    background: #21BA45 !important;
+    color: white !important;
+}
+
+.ui.basic.red.button:hover, .ui.button.red.button:hover {
+    background: #DB2828 !important;
+    color: white !important;
+}
+
+.full-click {
+    display: block !important;
+}

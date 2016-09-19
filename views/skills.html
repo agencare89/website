@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Adam Gencarelli - Skills </title>
+
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/icon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    </head>
+    <body class="pushable">
+        <div class="pusher">
+            <div class="ui container">
+                <div id="main-nav" class="ui large secondary inverted pointing menu fixed solid-bg">
+                    <a href="/about" class="item">About Me</a>
+                    <a href="/skills" class="active no-active item">Skills</a></li>
+                    <a href="/" class="item"> <i class="large home icon"></i> </a>
+                    <a href="/experience" class="item">Experience</a>
+                    <a href="/portfolio" class="item">Projects</a>
+                </div>
+            </div>            
+
+            <div id="skills-main" class="vue-skills">
+                <div class="ui container animated fadeIn">
+                    <div class="ui grid">
+                        <div class="two column row">
+                            <div class="left aligned column">
+                                <div class="ui transparent large left icon input">
+                                    <input id="search-input" type="text" placeholder="Search for any skill" autocomplete="off">
+                                    <i class="search icon"></i>
+                                </div>
+                            </div>
+                            <div class="right aligned column">
+                                <h2 class="ui right floated header">My Skills</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui clearing divider"></div>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui grid">
+                        <div class="two column row">
+                            <div class="left aligned column animated slideInLeft">
+                                <h3 class="ui header">Technical Overview</h3>
+                                <div class="ui hidden divider"></div>
+                                <div class="ui grid" id="technicalSkillsGrid"></div>
+                            </div>
+                            <div class="right aligned column animated slideInRight">
+                                <i id="sort-90" class="inverted circular sort content descending icon"></i>
+                                <i id="sort-09" class="circular sort content ascending icon"></i>
+                                <i id="sort-AZ" class="circular sort alphabet ascending icon"></i>
+                                <i id="sort-ZA" class="circular sort alphabet descending icon"></i>
+
+                                <div class="ui hidden divider"></div>
+                                <div class="ui grid" id="personalSkillsGrid"></div>
+                            </div>
+                        </div>
+                        <div class="ui hidden divider"></div>
+                        <!--<div class="row">
+                            <div class="left aligned column animated slideInUp">
+                                <h3 class="ui header">Personal Overview</h3>
+                                <div class="ui hidden divider"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div id="home-footer">
+                <div class="ui container">
+                    <div class="ui equal width grid">
+                        <div class="left aligned column">
+                            <a class="white-text" href="https://www.facebook.com/adam.gencarelli"><i class="large facebook f icon"></i></a>
+                            <a class="white-text" href="https://ca.linkedin.com/in/adamgencarelli"><i class="large linkedin icon"></i></a>
+                            <a class="white-text" href="mailto:agencare@uwo.ca"><i class="large mail icon"></i></a>
+                            <!-- <a class="white-text" href=""><i class="large phone icon"></i></a> -->
+                            <a class="white-text" href="https://github.com/agencare89"><i class="large github icon"></i></a>
+                        </div>
+                        <div class="right aligned column" style="color: white;">
+                            <i class="copyright icon"></i>Designed and Developed by Adam Gencarelli
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
+    <script src="/js/skills.js"></script>
+    <script>
+
+        // Vue.component("skill", {
+        //     template: "<h3>{{skillName}}</h3>",
+        //     props: {
+        //         skillName: {
+        //             type: String,
+        //             require: true
+        //         },
+        //         skillStars: {
+        //             type: int,
+        //             require: true
+        //         }
+        //     }
+        // });
+        // Vue.filter("search", function() {
+        //     var currentSkills = this.skills;
+        //     var filterSkills = [];
+
+        //     console.log("Searching..");
+        //     if (this.filterSkill.equals("")) {
+        //         return currentSkills;
+        //     }
+
+        //     for (var i = 0; i < currentSkills.length; i++) {
+        //         if (currentSkills[i].name.contains(this.filterSkill)) {
+        //             filterSkills.push(currentSkills[i]);
+        //         }
+        //     }
+
+        //     return filterSkills;
+        // });
+
+        // var skills = new Vue({
+        //     el: ".vue-skills", 
+        //     data: {
+        //         filterSkill: "", 
+        //         filteredSkills: [], 
+        //         skills: [
+        //             {
+        //                 name: "Java", 
+        //                 stars: 5, 
+        //                 category: "technical"
+        //             },
+        //             {
+        //                 name: "C++", 
+        //                 stars: 3,
+        //                 category: "technical"
+        //             }, 
+        //             { 
+        //                 name: "Node.js / Express",
+        //                 stars: 5,
+        //                 category: "technical"
+        //             }, 
+        //             {
+        //                 name: "Automation Testing",
+        //                 stars: 4,
+        //                 category: "technical"
+        //             },
+        //             {
+        //                 name: "Leadership", 
+        //                 stars: 4,
+        //                 category: "personal"
+        //             }, 
+        //             {
+        //                 name: "Collaboration",
+        //                 stars: 4,
+        //                 category: "personal"
+        //             },
+        //             {
+        //                 name: "Humor",
+        //                 stars: 5,
+        //                 category: "personal"
+        //             }
+        //         ]
+        //     }
+        // });
+    </script>
+</html>
+
+
+<!-- <div id="skills-search">
+                    <form id="search">
+                        <div class="ui massive icon input">
+                            <input v-model="filterSkill" id="search-input" type="text" placeholder="Search for any skill">
+                            <i class="search icon"></i>
+                        </div>
+                    </form>
+                </div>
+                <div id="skills-content" class="ui container"> 
+                    <div class="ui equal width grid">
+                        <div class="column">
+                            <h2 class="ui center aligned header">Technical Skills</h2>
+                            <div class="ui list" v-for="techSkill in skills | search | filterBy 'technical' in 'category'">
+                                <div class="item">
+                                    <!-- <img class="ui avatar image" src="/images/avatar2/small/rachel.png"> 
+                                    <div class="content">
+                                        <a class="header">{{techSkill.name}}  
+                                            <span v-for="n in techSkill.stars">
+                                                <i class="star icon"></i>
+                                            </span>
+                                        </a>
+                                        
+                                         <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <h2 class="ui center aligned header">Personal Skills</h2>
+                            <div class="ui list" v-for="personalSkill in skills | search 
+                        | filterBy 'personal' in 'category'">
+                                <div class="item">
+                                    <!-- <img class="ui avatar image" src="/images/avatar2/small/rachel.png"> 
+                                    <div class="content">
+                                        <a class="header">{{personalSkill.name}}</a> 
+                                        <span v-for="n in personalSkill.stars">
+                                            <i class="star icon"></i>
+                                        </span>
+
+                                        <!-- <div class="description">Last seen watching <a><b>Arrested Development</b></a> just now.</div> -->

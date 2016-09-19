@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Adam Gencarelli - Software Engineer </title>
+
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/icon.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body class="pushable">
+        <div class="pusher">
+            <div id="main-screen" class="ui inverted vertical masthead center aligned segment">
+                <div class="ui container">
+                    <div id="main-nav" class="ui large secondary inverted pointing menu center aligned">
+                        <a href="/about" class="item">About Me</a>
+                        <a href="/skills" class="item">Skills</a></li>
+                        <a href="/" class="active item"> <i class="large home icon"></i> </a>
+                        <a href="/experience" class="item">Experience</a>
+                        <a href="/portfolio" class="item">Projects</a>
+                    </div>
+                </div>
+                <div id="main-text" class="ui text container">
+                    <h1 class="ui inverted header css-typing">
+                        <span id="typeText" text="Welcome, I'm Adam Gencarelli "><span id='cursor'>| </span></span>
+                    </h1>
+                    <div class="ui huge warning button" id="downloadCV">
+                        View CV <i class="download icon"></i>
+                    </div>
+                    <a href="/about">
+                        <div class="ui huge primary button" href="/about">
+                            Meet Adam <i class="user icon"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="top-skills-section" >
+                <h2 class="ui center aligned header">Top Skills</h2>
+                <div id="top-skills-icons" class="ui container">
+                    <div class="ui equal width grid">
+                        <div class="column"><img class="ui fluid image top-skills-img" src="/images/csharp.jpg"></div>
+
+                        <div class="column"><img class="ui fluid image top-skills-img" src="/images/nodejs_logo.png"></div>
+
+                        <div class="column"><img class="ui fluid image top-skills-img-middle" src="/images/javascript_logo.png"></div>
+
+                        <div class="column"><img class="ui fluid image top-skills-img" src="/images/java_logo.png"></div>
+
+                        <div class="column"><img class="ui fluid image top-skills-img" src="/images/python_logo.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="home-page-text-1" class="animated fadeInUp">
+                <div class="ui text container" >
+                    <p id="text-1-header">
+                        As a Software Engineering student at Western University, I have developed a great passion for technology and coding. I am looking forward to bringing that passion to my work every single day.
+                    <p>
+                    
+                </div>
+            </div>
+            <div id="projects-teaser">
+                <h2 class="ui center aligned header">Latest Projects</h2>
+                <div class="ui container">
+                    <div class="ui equal width grid">
+                        <div class="row">
+                            <div class="column">
+                                <div class="ui fluid card">
+                                    <div class="image">
+                                        <img class="set-height" src="/images/watson_logo.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <div class="header"> Resume Funnel </div>
+                                        <div class="meta"> Node.js Web App, Watson API </div>
+                                        <div class="description"> A web application that uses Watson's Alchemy API to rank submitted resumes for job postings. </div>
+                                    </div>
+                                    <div class="extra content">
+                                        <div class="ui two buttons">
+                                            <div class="ui basic green button"><a href="http://resumefunnel.mybluemix.net/" target="_blank">View Demo</a></div>
+                                            <div class="ui basic red button"><a href="http://github.com/agencare89/resumefunnel" target="_blank">View Source</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="column">
+                                <div class="ui fluid card">
+                                    <div class="image">
+                                        <img class="set-height" src="/images/reversi_boardgame.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <div class="header"> Reversi Board Game </div>
+                                        <div class="meta"> Java and C/C++ </div>
+                                        <div class="description"> A client-server architecture that creates game lobbies for the popular board game, Reversi. </div>
+                                    </div>
+                                    <div class="extra content">
+                                        <div class="ui two buttons">
+                                            <div class="ui basic green button disabled">View Demo</div>
+                                            <div class="ui basic red button"><a class="full-click" href="https://github.com/agencare89/reversi" target="_blank">View Source</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="ui fluid card">
+                                    <div class="image">
+                                        <img class="set-height" src="/images/muse_headband.png">
+                                    </div>
+                                    <div class="content">
+                                        <div class="header"> Seizure.io </div>
+                                        <div class="meta"> Android, Muse toolkit </div>
+                                        <div class="description"> A mobile application designed with awareness to predict when a user will soon experience a seizure.</div>
+                                    </div>
+                                    <div class="extra content">
+                                        <div class="ui two buttons">
+                                            <div class="ui basic green button disabled">View Demo</div>
+                                            <div class="ui basic red button"><a class="full-click" href="https://github.com/agencare89/seizure.io-hackWestern" target="_blank">View Source</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column">
+                                <a id="goToPortfolio" href="/portfolio"><button class="fluid ui secondary basic button">View More Projects</button></a>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="home-footer">
+                <div class="ui container">
+                    <div class="ui equal width grid">
+                        <div class="left aligned column">
+                            <a class="white-text" href="https://www.facebook.com/adam.gencarelli"><i class="large facebook f icon"></i></a>
+                            <a class="white-text" href="https://ca.linkedin.com/in/adamgencarelli"><i class="large linkedin icon"></i></a>
+                            <a class="white-text" href="mailto:agencare@uwo.ca"><i class="large mail icon"></i></a>
+                            <!-- <a class="white-text" href=""><i class="large phone icon"></i></a> -->
+                            <a class="white-text" href="https://github.com/agencare89"><i class="large github icon"></i></a>
+                        </div>
+                        <div class="right aligned column" style="color: white;">
+                            <i class="copyright icon"></i>Designed and Developed by Adam Gencarelli
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="/js/index.js"></script>
+</html>
