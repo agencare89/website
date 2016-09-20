@@ -9,7 +9,6 @@
 .solid-bg {
     background-color: #1B1C1D !important;
     color: white;
-    padding-left: 34vw !important;
     height: 7vh !important;
 }
 
@@ -28,7 +27,7 @@
 #main-nav {
     text-align: center !important;
     border: none !important;
-    padding-left: 27vw;
+    justify-content: center !important;
 }
 
 h1 {
