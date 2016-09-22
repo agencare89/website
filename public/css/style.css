@@ -9,7 +9,7 @@
 .solid-bg {
     background-color: #1B1C1D !important;
     color: white;
-    height: 7vh !important;
+    height: 5% !important;
 }
 
 .no-active {
@@ -22,12 +22,22 @@
     background-position: center;
     background-size: cover;
     height: 70vh !important;
+    
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 #main-nav {
     text-align: center !important;
     border: none !important;
+    display: flex !important;
+    align-items: center !important;
     justify-content: center !important;
+}
+
+#main-text-wrapper {
+    display: block;
 }
 
 h1 {
@@ -36,8 +46,9 @@ h1 {
 }
 
 #main-text {
-    /*margin-top: 5%; */
-    margin-top: 10%;
+    padding-top: 10%;
+    justify-content: center;
+    
 }
 
 a#goToPortfolio, a#goToPortfolio:hover {
@@ -105,7 +116,16 @@ button.fluid.ui.secondary.basic.button:hover {
 #top-skills-section {
     margin-top: 3vh !important;
     margin-bottom: 5vh !important;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
     height: 25vh !important;
+}
+
+#top-skills-wrapper {
+    display: block;
+    padding-top: 1%;
 }
 
 .top-skills-img-middle {
@@ -127,10 +147,11 @@ button.fluid.ui.secondary.basic.button:hover {
 #home-page-text-1 {
     height: 40vh !important;
     background-color: #1B1C1D;
+    display: flex;
+    align-items: center;
 }
 
 #text-1-header {
-    padding-top: 2em !important;
     color: #edeeef !important;
     font-size: 28px !important;
     text-align: center !important;
@@ -143,13 +164,13 @@ button.fluid.ui.secondary.basic.button:hover {
 }
 
 #home-footer {
-    height: 7vh !important;
-    margin-top: 3vh !important;
-    padding-top: 1em !important;
+    height: 6vh !important;
     background-color: #1B1C1D !important;
-    position:absolute;
-    bottom:0;
+    position: absolute;
+    bottom:0 !important;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .white-text {
@@ -214,7 +235,7 @@ button.fluid.ui.secondary.basic.button:hover {
 /* About page */ 
 #about-main {
     margin-top: 15vh !important;
-    height: 77.1vh !important;
+    height: auto !important;
 }
 
 #aboutMeImage {
